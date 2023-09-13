@@ -1,0 +1,122 @@
+<!--author fanker-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>University Students Exchange Website</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="University Student Exchange , School Information exchanging,UEW">
+    <meta name="description" content="Free Web for Students to view to know about All universities or attractions in one city. hoping you have an excellent college life,fanker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+          integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+          crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+            integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+            crossorigin=""></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body id="background">
+<!--导航栏-->
+<div class="lanmu">
+    <img class="img1" src="img/logo1.png" alt="error">
+    <p class="mainTopic">University Student Exchange</p>
+    <ul class="breadcrumb">
+        <li>
+            <a  href="#">
+                <span class="text">StayTuned</span>
+            </a>
+        </li>
+        <li>
+            <a href="person.html" id="Personalhomepage">
+                <img src="img/person.png" class="email" alt="error">
+                <span class="text">personal</span>
+            </a>
+        </li>
+        <li>
+            <a href="#footer">
+                <img src="img/email.png" class="email" alt="error">
+                <span class="text" id="emailtext">email</span>
+            </a>
+        </li>
+        <li>
+            <a href="login.html" id="logina">
+                <img src="img/login.png" id="login" alt="error">
+                <span class="text" id="logintext">Login</span>
+            </a>
+        </li>
+        <li>
+            <a id="last" href="index.html">
+                <img id="home" src="img/home.png" alt="error">
+                <span class="text">home</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="mapandt" id = "map"></div>
+<!--内容-->
+<div class="mapandt" id = "content"><h3 id = "topic">Technology changes life</h3>
+    <p id="help">
+    This is a new information access and exchange platform that allows various universities to compile
+    information and provide information about universities or A place of relaxation nearly them for the reference of students who are going to enter universities,
+    and at the same time to share their daily lives with students from different universities, with the aim of providing an opportunity for inter-university exchange for university students under the epidemic</p>
+    <p id="show"></p>
+    <p id="tips">Tips: you can click on the markers on the map to see the information of the corresponding school or famous classic nearly the university.
+    </p></div>
+<audio id="audio" src="music/warm.mp3" preload="auto" controls loop hidden="hidden"></audio>
+<!--页脚-->
+<footer id="footer">
+    <p>If you have any suggestions or questions,please contact us email <a href="mailto:2695447326@pp.com">2695447326@pp.com</a></p>
+    <p> <a href="https://validator.w3.org/nu/?doc=https://sfs-webdev.massey.ac.nz/site2253/158258/assignment/HSSE/index.html" aria-label="more">Valid HTML</a>   <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://sfs-webdev.massey.ac.nz/site2253/158258/assignment/HSSE/css/main.css" aria-label="more"> Valid CSS</a> </p>
+</footer>
+    <script>
+         var icon = {
+             iconUrl:'img/shopping.png',
+             iconSize:[50,50]
+         }
+         var customIcon = L.icon(icon);
+         var makerop ={
+             title:"shopping",
+             clickable:true,
+             draggable:true,
+             icon:customIcon
+         }
+         var  maker =new L.Marker([39.915692,116.392693],makerop);
+         var Tinghua = new L.Marker([40.00281,116.32697]);
+         var Peking = new L.Marker([39.997753,116.316167]);
+         var Translation = new L.Marker([39.957862,116.34985]);
+         var Arting = new L.Marker([39.989664,116.470665]);
+         var mapOptions = {
+             center: [39.979, 116.3999],
+             zoom: 12
+         }
+
+         // Creating a map object
+         var map = new L.map('map', mapOptions);
+         // Creating a Layer object
+         var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+         // Adding layer to the map
+         Tinghua.on('click',function (){
+             new Dialog("Tsinghua University","Member of Tsinghua Cambridge MIT Low Carbon University Alliance, China's base for high-level talent training and scientific and technological research","Ting");
+         })
+         Peking.on('click',function (){
+             new Dialog("Peking University","Peking University was founded in 1898 at the time of the Restoration Law, originally known as Jingshi University Hall, is the first national comprehensive university in modern China, and at the beginning of its establishment, it was also the highest educational administrative organ of the country.","Peking");
+         })
+         Translation.on('click',function (){
+             new Dialog("Beijing Jiaotong University","Beijing Jiaotong University is one of the three sources of Jiaotong University, with historical origins dating back to 1896. As of July 2022, the university has two campuses in Haidian District, Beijing, with a total area of nearly 1,000 acres","translation");
+         })
+         Arting.on('click',function (){
+             new Dialog("CAFA","Central Academy of Fine Arts (CAFA), located in Beijing, is a higher art school directly under the Ministry of Education of the People's Republic of China, and a national \"double first-class\" university.","CAFA")
+         })
+         maker.on('click',function (){
+              new Dialog("ForbiddenCity","The Forbidden City in Beijing, formerly known as the Forbidden City, is the imperial palace of the Ming and Qing dynasties in China. It is located at the center of the central axis of Beijing. Centered on the three halls, the Forbidden City of Beijing covers an area of about 720000 square meters, with a building area of about 150000 square meters. It has more than 70 palaces and more than 9000 houses.","gugong")
+         })
+         map.addLayer(layer);
+         Tinghua.addTo(map);
+         Peking.addTo(map);
+         Translation.addTo(map);
+         Arting.addTo(map);
+          maker.addTo(map);
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jiaotong University</title>
+    <script src="js/content.js"></script>
+    <meta name="keywords" content="University Student Exchange Jiaotong university,Jiaotong university">
+    <meta name="description" content="Some information for Jiaotong university in China,coming from Websites belonging to students, Having a more fresh view">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Jtlunbo.css">
+</head>
+<body>
+<!--导航栏-->
+<div class="lanmu">
+    <img class="img1" src="img/logo1.png" alt="error">
+    <p class="mainTopic">University Student Exchange</p>
+    <ul class="breadcrumb">
+        <li>
+            <a  href="#">
+                <span class="text">StayTuned</span>
+            </a>
+        </li>
+        <li>
+            <a href="person.html" id="Personalhomepage">
+                <img src="img/person.png" class="email" alt="error">
+                <span class="text">personal</span>
+            </a>
+        </li>
+        <li>
+            <a href="#footer">
+                <img src="img/email.png" class="email" alt="error">
+                <span class="text" id="emailtext">email</span>
+            </a>
+        </li>
+        <li>
+            <a href="login.html"  id="logina">
+                <img src="img/login.png" id="login" alt="error">
+                <span class="text" id="logintext">Login</span>
+            </a>
+        </li>
+        <li>
+            <a id="last" href="index.html">
+                <img id="home" src="img/home.png" alt="error">
+                <span class="text">home</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="lan">
+    <div class="lunbo">
+        <!-- 三个单选按钮，先默认选择第一个 -->
+        <input type="radio" name="choose" id="choose1" checked>
+        <input type="radio" name="choose" id="choose2">
+        <input type="radio" name="choose" id="choose3">
+        <!-- 放三张图片，用背景图片表示 -->
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <!-- 三个label标签 -->
+        <!--    <img class="item item1">-->
+        <!--    <img class="item item2">-->
+        <!--    <img class="item item3">-->
+        <!--    <img class="item item4">-->
+        <span class="select">
+             <label for="choose1"></label>
+             <label for="choose2"></label>
+             <label for="choose3"></label>
+         </span>
+    </div>
+    <ul class="ting">
+        <li><a href="#des">description</a>
+        <li><a href="#videotop">Campus video</a>
+        <li><a href="#AC">Alumni Circle</a>
+    </ul>
+    <div class="Wenzi">
+    <h3 id="des">Beijing Jiaotong university</h3>
+    <p>Beijing Jiaotong University, located in Beijing, is a national key university directly under the Ministry of Education of the People's Republic of China and co founded by the Ministry of Education, the Ministry of Transport, the People's Government of Beijing Municipality and China National Railway Group Co., Ltd. It is a national "double first-class" construction university, [56] "211 Project" construction university, and has been selected into the "985 Project Superior Discipline Innovation Platform" Innovation ability improvement plan of colleges and universities, "111 plan", education and training plan for outstanding engineers</p>
+    <p>
+        As of July 2022, the school has built east and west campus in Haidian District, Beijing, with a total area of nearly 1000 mu and a building area of more than 1 million square meters. In addition, the school has built Weihai Campus in Weihai City, Shandong Province, with a floor area of more than 1000 mu; The school has 18 colleges; The university has 17 post doctoral research mobile stations and 1 workstation; There are 21 doctoral programs in first-class disciplines and 3 authorized categories of doctoral professional degrees; There are 32 first level discipline master's degree programs, 2 second level discipline master's degree programs, and 19 master's degree authorization categories; 3151 in-service teaching staff, including 2049 full-time teachers; There are 16888 undergraduate students, 2763 doctoral students and 9933 graduate students in the university.
+        According to the official website of the university in July 2022, the university has more than 70 research platforms at the provincial and ministerial level, including 1 State Key Laboratory of Rail Transit Control and Safety
+    </p>
+    </div>
+    <h3 id="videotop">Campus video</h3>
+    <video controls id="video">
+        <source src="img/Jt.mp4" type="video/mp4">
+    </video>
+    <h3 id="AC">Alumni Circle</h3>
+    <div id="commend"></div>
+    <label for="typing"></label><textarea id="typing" placeholder="Enter comment"></textarea>
+    <button id="btn">Subbmit</button>
+    <!--    右边框-->
+    <div class="social">
+        <button class="social__btn_off">
+        <img src="img/hidden.png" class="social__btn_on_img1" alt="laodeyi">
+        </button>
+        <button class="social__btn_on" style="display: none;">
+            <img src="img/hidden.png" class="social__btn_on_img2" alt="laodeyi">
+            <!-- transform: rotate(-180deg); -->
+        </button>
+        <ul class="social_wx">
+
+            <li class="social_first">
+                <p class="wen1">contactus</p>
+                <img src="img/wechat.jpg" alt="laodeyi">
+                <p class="wen2">scanwechatQR</p>
+            </li>
+            <li class="social__item">
+                <p>email</p>
+            </li>
+            <li class="social__item">
+                <a href="mailto:2695447326@pp.com">2695447326@pp.com</a>
+            </li>
+            <li class="social__item">
+                <a href="#">Home</a>
+            </li>
+        </ul>
+    </div>
+    <!--    广告栏-->
+    <div id="ground" >
+        <button id="btng" onclick="close()">close</button>
+    </div>
+</div>
+<footer id="footer">
+    <p>If you have any suggestions or questions,please contact us email <a href="mailto:2695447326@pp.com">2695447326@pp.com</a></p>
+    <p> <a href="https://validator.w3.org/nu/?doc=https://sfs-webdev.massey.ac.nz/site2253/158258/assignment/HSSE/translation.html" aria-label="more">Valid HTML</a>   <a href="https://validator.w3.org/nu/?doc=https://sfs-webdev.massey.ac.nz/site2253/158258/assignment/HSSE/css/Jtlunbo.css" aria-label="more"> Valid CSS</a> </p>
+</footer>
+<audio id="audio" src="music/nosaysecret-Jayzhou.mp3" style="display: none" preload="auto" controls loop ></audio>
+<script src="js/flower.js">
+</script>
+</body>
+</html>

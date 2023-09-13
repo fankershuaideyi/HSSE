@@ -1,0 +1,85 @@
+@import "navstyle.css";
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+.container {
+    height: 100%;
+    background-image: url(../img/a.png);
+}
+.login-wrapper {
+    background-color: #fff;
+    width: 458px;
+    height: 588px;
+    border-radius: 15px;
+    padding: 0 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+}
+.input-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(128, 125, 125);
+    font-size: 15px;
+    outline: none;
+}
+.input-item-sign-up{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(128, 125, 125);
+    font-size: 15px;
+    outline: none;
+    display: none;
+}
+.input-item-sign-up-td{
+    display: none;
+}
+.input-item::placeholder {
+    text-transform: uppercase;
+}
+.btn {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+    color: #fff;
+}
+.msg {
+    text-align: center;
+    line-height: 88px;
+}
+a {
+    text-decoration-line: none;
+    color: #abc1ee;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom:-50px;
+    clear: both;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    background: #72655b;
+    margin-bottom: 10px;
+}

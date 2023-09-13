@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/*person typesetting */
+body{
+    background-image: url(../img/a.jpg);
+    font: 16px/1.5 'Microsoft Yahei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+}
+@media screen and (min-width: 540px){
+    html[resize] body{
+        font-size: 18px;
+    }
+}
+.wrap{
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 0 1.25em;
+    box-sizing: content-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1.25em;
+    margin-right: -1.25em;
+}
+.row.full{
+    margin-left: 0;
+    margin-right: 0;
+}
+.row.scrollable{
+    overflow: auto;
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: nowrap;
+}
+@media screen and (min-width: 900px){
+    .row .col-m-1{
+        -ms-flex: 0 0 8.3333%;
+        flex: 0 0 8.3333%;
+        max-width: 8.3333%;
+    }
+    .row .col-m-2{
+        -ms-flex: 0 0 16.6666%;
+        flex: 0 0 16.6666%;
+        max-width: 16.6666%;
+    }
+
+    .row .col-m-3{
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .row .col-m-4{
+        -ms-flex: 0 0 33.3333%;
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+
+    .row .col-m-5{
+        -ms-flex: 0 0 41.3333%;
+        flex: 0 0 41.6666%;
+        max-width: 41.6666%;
+    }
+
+    .row .col-m-6{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .row .col-m-7{
+        -ms-flex: 0 0 58.3333%;
+        flex: 0 0 58.3333%;
+        max-width: 58.3333%;
+    }
+
+    .row .col-m-8{
+        -ms-flex: 0 0 66.6666%;
+        flex: 0 0 66.6666%;
+        max-width: 66.6666%;
+    }
+    .row .col-m-9{
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .row .col-m-10{
+        -ms-flex: 0 0 83.3333%;
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
+    }
+    .row .col-m-11{
+        -ms-flex: 0 0 91.6666%;
+        flex: 0 0 91.6666%;
+        max-width: 91.6666%;
+    }
+    .row .col-m-12{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+

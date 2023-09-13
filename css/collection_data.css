@@ -1,0 +1,17 @@
+body{
+    width: 100%;
+
+}
+/*没啥需要的注释*/
+.table{
+    width: 90%;
+    margin-left: 5%;
+}
+
+ .table #tab{
+    width: 100%;
+}
+ button{
+     width: 15%;
+     margin: 1% 10% 2% 20%;
+ }

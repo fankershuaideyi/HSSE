@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="University Student Exchange login,HSEWL">
+    <meta name="description" content="Login for University Exchange Website login,it is a website for College Student Exchange,Looking forward to your enter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="js/flower.js"></script>
+    <script src="js/savevalue.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="lanmu">
+        <img class="img1" src="img/logo1.png" alt="error">
+        <p class="mainTopic">University Student Exchange</p>
+        <ul class="breadcrumb">
+            <li>
+                <a  href="#">
+                    <span class="text">StayTuned</span>
+                </a>
+            </li>
+            <li>
+                <a href="person.html" id="Personalhomepage">
+                    <img src="img/person.png" class="email" alt="error">
+                    <span class="text">personal</span>
+                </a>
+            </li>
+            <li>
+                <a href="#footer">
+                    <img src="img/email.png" class="email" alt="error">
+                    <span class="text" id="emailtext">email</span>
+                </a>
+            </li>
+            <li>
+                <a href="login.html" id="logina">
+                    <img src="img/login.png" id="login" alt="error">
+                    <span class="text" id="logintext">Login</span>
+                </a>
+            </li>
+            <li>
+                <a id="last" href="index.html">
+                    <img id="home" src="img/home.png" alt="error">
+                    <span class="text">home</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+<!--我爱妹子-->
+    <div class="login-wrapper">
+        <h2 class="header">Login</h2>
+        <form class="form-wrapper">
+            <table>
+                <tr>
+                    <td>username:</td>
+                    <td> <label for="na"></label><input type="text" name="username"  class="input-item" id="na"></td>
+                </tr>
+                 <tr>
+                  <td>password:</td>
+                  <td> <label for="pa"></label><input type="password" name="password"  class="input-item" id="pa"></td>
+                 </tr>
+                <tr>
+                    <td id="Emtd" class="input-item-sign-up-td">email:</td>
+                    <td><label for="em"></label><input type="text" name="email" class="input-item-sign-up" id="em"></td>
+                </tr>
+                <tr>
+                    <td id="PHtd" class="input-item-sign-up-td">phone:</td>
+                    <td><label for="ph"></label><input type="text" name="phone" oninput="value=value.replace(/[^\d]/g,'')" placeholder="Just supporting Digital" class="input-item-sign-up" id="ph"></td>
+                </tr>
+            </table>
+           <div class="btn" id="log" onclick="tiaozhuan()">Login</div>
+        </form>
+        <div class="msg">
+            Don't have account?
+            <a href="#" onclick="dishow()">Sign up</a>
+        </div>
+    </div>
+</div>
+<audio id="audio" src="music/warm.mp3" preload="auto" controls loop hidden="hidden"></audio>
+<script src="js/flower.js" ></script>
+<footer id="footer">
+    <p>If you have any suggestions or questions,please contact us email <a href="mailto:2695447326@pp.com">2695447326@pp.com</a></p>
+    <p> <a href="https://validator.w3.org/nu/?doc=https://sfs-webdev.massey.ac.nz/site2253/158258/assignment/HSSE/login.html" aria-label="more">Valid HTML</a>   <a href="https://validator.w3.org/nu/?doc=https://sfs-webdev.massey.ac.nz/site2253/158258/assignment/HSSE/css/login.css" aria-label="more"> Valid CSS</a> </p>
+</footer>
+</body>
+</html>

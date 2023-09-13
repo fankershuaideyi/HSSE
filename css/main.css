@@ -1,0 +1,71 @@
+@import "navstyle.css";
+#map{
+    width: 70%;
+    margin-left: 2%;
+    margin-top: 0;
+    height: 700px;
+    border-radius:10px;
+    background:#000
+}
+#background{
+    background-image: url(../img/a.png);
+    opacity: 0.7;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mapandt{
+    float: left;
+    margin-bottom: 5%;
+}
+#content{
+    margin-left: 5%;
+    margin-top: 0;
+    width: 20%;
+    margin-right: 0;
+}
+#topic{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+#help{
+    font-size: 17px;
+}
+p{
+    font-style: italic;
+    line-height: 2.5em;
+}
+#tips{
+    line-height: 2em;
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+}
+ul{
+    display: block;
+    height: 40px;
+    margin-top: 1px;
+    margin-right: 5%;
+
+}
+
+footer{
+    width: 100%;
+    bottom:-150px;
+    clear: both;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    background: #72655b;
+    margin-bottom: -55px;
+}
+/*add border for text*/
+#content{
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    box-shadow: 10px -10px 10px grey;
+}
+
+
